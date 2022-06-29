@@ -87,6 +87,13 @@ router.get('/comments/:id', withAuth, async (req, res) => {
     }
 })
 
+router.get('/addComment/:id', (req, res) => {
+    res.render('addComment', {
+        logged_in: req.session.logged_in,
+        post_id: req.params.id
+    });
+})
+
 
 
 
