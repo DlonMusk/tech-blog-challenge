@@ -1,11 +1,6 @@
-{{#each posts as | post |}}
-<a href="/comments/{{post.id}}" class="card">
-    <div class="card-header">
-        <header>{{title}}</header>
-    </div>
+<div class="card">
     <div class="card-body">
         <p class="card-text">{{content}}</p>
         <p class="card-text">{{user.name}} posted at : {{format_time date_created}}</p>
     </div>
-</a>
-{{/each}}
+</div>

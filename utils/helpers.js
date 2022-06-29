@@ -1,5 +1,7 @@
 const getUserName = () => {
+    const username = document.querySelector('#username');
     
+    username.innerHTML();
 }
 
 

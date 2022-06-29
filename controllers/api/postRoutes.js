@@ -2,7 +2,6 @@ const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
 
 router.post('/addPost', async (req, res) => {
-
     try{
         console.log("Title: ", req.body.title);
         console.log("Content: ", req.body.content);
