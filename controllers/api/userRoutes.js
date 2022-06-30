@@ -1,6 +1,6 @@
 // import router and user model
 const router = require('express').Router();
-const { User } = require('../../models');
+const { User } = require('../../models/indexs');
 
 // route to sign up a new user and save information to the session
 router.post('/', async (req, res) => {

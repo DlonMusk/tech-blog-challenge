@@ -1,6 +1,6 @@
 // import router and models
 const router = require('express').Router();
-const { Post, Comment } = require('../../models');
+const { Post, Comment } = require('../../models/indexs');
 
 // route to add a new post
 router.post('/addPost', async (req, res) => {

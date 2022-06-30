@@ -1,7 +1,7 @@
 // import models
-const Post = require('./post');
-const User = require('./user');
-const Comment = require('./comment');
+const Post = require('./posts');
+const User = require('./users');
+const Comment = require('./comments');
 
 // link models
 User.hasMany(Post, {

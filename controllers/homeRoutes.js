@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Comment, Post, User } = require('../models');
+const { Comment, Post, User } = require('../models/indexs');
 const withAuth = require('../utils/auth');
 
 // home page I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
