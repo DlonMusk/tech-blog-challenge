@@ -1,22 +1,22 @@
 [
     {
-        "title": "this",
-        "content": "this is the post",
+        "title": "is Javascript hard?",
+        "content": "Javascript can be hard at times but as long as you're putting in the time it shouldent get too chalenging",
+        "user_id": "3"
+    },
+    {
+        "title": "what is your favorite programing language?",
+        "content": "mine is javascript",
+        "user_id": "2"
+    },
+    {
+        "title": "tips and tricks for staying motivated to code?",
+        "content": "I find that looking back on where i started helps me see the bigger picture",
         "user_id": "1"
     },
     {
         "title": "this",
-        "content": "this is the post",
-        "user_id": "1"
-    },
-    {
-        "title": "this",
-        "content": "this is the post",
-        "user_id": "1"
-    },
-    {
-        "title": "this",
-        "content": "this is the post",
+        "content": "this can be tricky but usefull",
         "user_id": "1"
     }
 ]

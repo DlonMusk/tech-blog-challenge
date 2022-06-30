@@ -5,8 +5,13 @@
         "password": "12345678"
     },
     {
-        "name": "Dylan",
-        "email": "dylan2@hotmail.com",
-        "password": "12345678"
+        "name": "Bob",
+        "email": "bob2@hotmail.com",
+        "password": "securepassword"
+    },
+    {
+        "name": "Morty",
+        "email": "morty137@hotmail.com",
+        "password": "meseeks"
     }
 ]

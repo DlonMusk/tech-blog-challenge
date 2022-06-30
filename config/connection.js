@@ -1,8 +1,10 @@
+//set up sequelize and require .env files
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
 let sequelize;
 
+// create new seqwlize server
 if(process.env.JAWSDB_URL){
     sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {

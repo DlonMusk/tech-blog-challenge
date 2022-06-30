@@ -1,16 +1,31 @@
 [
     {
-        "content" : "this is a really cool post",
+        "content" : "awesome job!",
         "post_id" : "1",
         "user_id" : "1"
     },
     {
-        "content" : "this is a really cool post",
+        "content" : "love this idea",
+        "post_id" : "2",
+        "user_id" : "2"
+    },
+    {
+        "content" : "couldent have said it better myself",
+        "post_id" : "3",
+        "user_id" : "3"
+    },
+    {
+        "content" : "never thought about it that way",
+        "post_id" : "2",
+        "user_id" : "2"
+    },
+    {
+        "content" : "not really agreeing with this",
         "post_id" : "1",
         "user_id" : "2"
     },
     {
-        "content" : "this is a really cool post",
+        "content" : "i just learned this yesterday",
         "post_id" : "3",
         "user_id" : "1"
     },

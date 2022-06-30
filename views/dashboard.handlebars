@@ -1,7 +1,7 @@
 <h1 class="mb-5" style="margin: 0 auto;">{{user.name}}'s Dashboard</h1>
 
 {{#each user.posts as | post |}}
-<div class="card my-3">
+<a href="/updateRemovePost/{{post.id}}" class="card my-3">
     <div class="card-header">
         <header>{{title}}</header>
     </div>
@@ -9,7 +9,7 @@
         <p class="card-text">{{content}}</p>
         <p class="card-text">{{user.name}} posted at : {{format_time date_created}}</p>
     </div>
-</div>
+</a>
 {{/each}}
 
 <a href="/newBlogPost" class="btn btn-primary">Post</a>

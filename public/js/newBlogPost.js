@@ -1,10 +1,10 @@
+// function to submit a new blog post by grabing user data and calling the api endpoint to addPost through a click event on form submit
 const submitBlogPost = async (event) => {
     event.preventDefault();
 
     const title = document.querySelector("#title").value.trim();
     const content = document.querySelector("#content").value.trim();
 
-    console.log(title, 'AAAAAAAAAAAA', content);
     if(title && content){
         const response = await fetch('/api/posts/addPost', {
             method: 'POST',

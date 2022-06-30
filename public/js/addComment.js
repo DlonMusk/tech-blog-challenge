@@ -1,13 +1,11 @@
-
+// function to grab user inputs and call the comment endpoint to create a new comment
 const submitComment = async (event) => {
     event.preventDefault();
 
-    console.log("HERLLRO");
     
     const comment = document.querySelector('#comment').value.trim();
     const postId = document.querySelector('#post_id').getAttribute('data-postId');
-    console.log(postId);
-    console.log("COMMENT: ", comment);
+
     if(comment && postId){
         const response = await fetch('/api/posts/comment', {
             method: 'POST',

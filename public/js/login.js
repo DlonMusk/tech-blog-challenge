@@ -1,3 +1,4 @@
+// function to handle user logins by grabing the user inputs and making a call to the api login endpoint to check against database
 const loginFormHandler = async (event) => {
     event.preventDefault();
 
@@ -21,7 +22,7 @@ const loginFormHandler = async (event) => {
 }
 
 
-
+// setting event listener
 document
     .querySelector('.login-form')
     .addEventListener('submit', loginFormHandler);

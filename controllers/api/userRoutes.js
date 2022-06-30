@@ -1,6 +1,8 @@
+// import router and user model
 const router = require('express').Router();
 const { User } = require('../../models');
 
+// route to sign up a new user and save information to the session
 router.post('/', async (req, res) => {
     try{
         const userDataDb = await User.create({
@@ -13,6 +15,7 @@ router.post('/', async (req, res) => {
         req.session.save(() => {
             req.session.logged_in = true,
             req.session.user_id = userDataDb.dataValues.id,
+            req.session.username = userDataDb.dataValues.name,
             res.status(200).json(userDataDb)
         })
     } catch (err) {
@@ -20,6 +23,7 @@ router.post('/', async (req, res) => {
     }
 })
 
+// route to login a user and save their informatin to the session 
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({where: {email: req.body.email}});
@@ -44,7 +48,8 @@ router.post('/login', async (req, res) => {
 
         req.session.save(() => {
             req.session.user_id = userData.id,
-            req.session.logged_in = true
+            req.session.logged_in = true,
+            req.session.username = userData.dataValues.name,
 
             res.json({user: userData, message: 'You are now logged in!'});
         })
@@ -55,6 +60,7 @@ router.post('/login', async (req, res) => {
 
 });
 
+// route to logout current user and destroy their session
 router.post('/logout', (req, res) => {
     if(req.session.logged_in){
         req.session.destroy(() => {
