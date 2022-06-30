@@ -28,7 +28,9 @@ const sess = {
     resave: false,
     saveUninitialized: true,
     store: new sequelizeStore({
-        db: sequelize
+        db: sequelize,
+        checkExpirationInterval: 1000 * 10,
+        expiration: 1000 * 120
     })
 }
 
